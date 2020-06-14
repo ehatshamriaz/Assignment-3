@@ -70,9 +70,11 @@ public class CheckMyVision : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        UpdateSight(); 
+        UpdateSight();
         if (targetInSight)
+        { 
             lastKnownSighting = target.position;
+        }
     }
 
     private void OnTriggerExit(Collider other)
